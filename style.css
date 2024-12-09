@@ -1,0 +1,68 @@
+@import url('CSS Folder/Desktop View/1440px_above.css');
+@import url('CSS Folder/Desktop View/1024px.css');
+
+@import url('CSS Folder/Tablet View/768px.css');
+
+@import url('CSS Folder/Phone View/425px.css');
+@import url('CSS Folder/Phone View/375px.css');
+@import url('CSS Folder/Phone View/320px.css');
+
+
+
+@import url('CSS Folder/animations.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Outfit";
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F2F2F2;
+    background-image: url('/IMAGES/backgroundImage.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 100dvh;
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: (4, 100dvh);
+}
+
+#home {
+    padding-inline: 40px;
+}
+
+#service, #project, #contact {
+    padding-top: 15dvh;
+    padding-inline: 40px;
+}
+
+#header {
+    padding-inline: 40px;
+}
+
+.navBarScroll {
+    background-color: #F2F2F2;
+    border-radius:8px;
+    box-shadow: 4px 4px 0 0 #20202049;
+    top: 5px;
+}
+
+.navBarStay {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0 0 #202020;
+    top: 0px;
+}

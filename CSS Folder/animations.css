@@ -1,0 +1,41 @@
+/* ANIMATION FOR LOGO */
+/* .logoAnimation {
+    animation: logoAnimation ease-out 1;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+@keyframes logoAnimation {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+} */
+
+/* ANIMATION FOR NAVIGATION BAR CONTAINER */
+/* .navBarConAnimation {
+    animation: navBarConAnimation ease-out 1;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+@keyframes navBarConAnimation {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+} */
+
+.navBarConAppearAnim {
+    animation: navBarConAppearAnim 0.5s 1;
+}
+@keyframes navBarConAppearAnim {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

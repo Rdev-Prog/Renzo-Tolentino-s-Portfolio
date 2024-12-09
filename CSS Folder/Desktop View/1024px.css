@@ -1,0 +1,63 @@
+@media screen and (max-width: 1024px) {
+    .container header {
+        width: 1000px;
+        left: 12px;
+        top: 10px;
+    }
+    
+    .container #home .imageCon img {
+        width: 100%;
+    }
+
+    .container #home .infoCon .textCon .text1 {
+        font-size: calc(var(--px)* 5);
+    }
+
+    .container #home .infoCon .textCon .text2 {
+        font-size: calc(var(--px)* 16);
+        font-weight: 600;
+    }
+
+    .container #home .infoCon .buttonCon button {
+        font-size: calc(var(--px) * 4);
+    }
+
+    .container #service .serviceListCon .serviceListBox .serviceTitle i {
+        font-size: calc(calc(var(--px)* 7));
+        width: 70px;
+    }
+
+    .container #service .serviceListCon .serviceListBox p {
+        font-size: calc(var(--px)* 5);
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .container #service .skillSetCon .skillBox i {
+        font-size: calc(var(--px)* 15);
+    }
+
+    .container #service .skillSetCon .skillBox p {
+        font-size: calc(var(--px)* 4);
+    }
+
+    .container #service .otherContactCon .otherContactItem a {
+        font-size: calc(var(--px)* 4);
+    }
+
+    .container #service .otherContactCon .otherContactItem i {
+        font-size: calc(var(--px)* 10);
+    }
+
+    .container #service .headerCon p, .container #project .headerCon p, .container #contact .headerCon p {
+        font-size: calc(var(--px)* 10);
+    }
+
+    .container #project .projectListCon {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container #project .projectListCon .projectItem button p {
+        font-size: calc(var(--px)* 4.5);
+    }
+}

@@ -1,0 +1,121 @@
+@media screen and (max-width: 425px) {    
+    .container #home {
+        padding-inline: 20px;
+    }
+
+    .container #header {
+        padding-inline: 20px;
+        width: 401px;
+    }
+    
+    .container .header .hamburgerIconCon {
+        display: block;
+        aspect-ratio: 1;
+        width: 30px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .container .header .navBarCon {
+        display: none;
+    }
+
+    .container header {
+        width: 100vw;
+    }
+
+    .container #home .imageCon img {
+        width: 100%;
+    }
+
+    .container #home .infoCon .textCon .text2 {
+        font-size: calc(var(--px)* 13);
+        line-height: 50px;
+    }
+
+    .container #home .infoCon .buttonCon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: calc(var(--px)* 5);
+    }
+
+    .container #home .infoCon .buttonCon button {
+        padding: calc(var(--px) * 4) calc(var(--px) * 9);
+        font-size: calc(var(--px) * 4);
+    }
+
+    .container #service .headerCon p, .container #project .headerCon p, .container #contact .headerCon p {
+        font-size: calc(var(--px)* 7);
+    }
+
+    .container #service .headerCon, .container #project .headerCon, .container #contact .headerCon {
+        gap: calc(var(--px)* 3);
+    }
+
+    .headerCon img {
+        width: 30%;
+        height: 100%;
+    }
+
+    .container #service .serviceListCon .serviceListBox .serviceTitle i {
+        font-size: calc(calc(var(--px)* 4));
+    }
+
+    .container #service .serviceListCon .serviceListBox .serviceTitle h1 {
+        font-size: calc(calc(var(--px)* 6));
+        width: 100%;
+    }
+
+    .container #service .skillSetCon .skillBox {
+        width: 120px;
+    }    
+
+    .container #service .skillSetCon .skillBox i {
+        font-size: calc(var(--px)* 10);
+    }
+    
+    .container #service .skillSetCon {
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    .container #service .otherContactCon {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        justify-content: space-between;
+    }
+
+    .container #service {
+        display: grid;
+        grid-template-rows: 10% 30% 20% 30%;
+        row-gap: calc(var(--px)* 5);
+    }
+
+    .container #project .projectListCon .projectItem {
+        height: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60% repeat(3, 1fr);
+    }
+
+    .container #project .projectListCon .projectItem .projTitle {
+        font-size: calc(var(--px)* 5);
+    }
+
+    .container #project .projectListCon .projectItem .techCon p {
+        font-size: small;
+    }
+
+    .container #project .projectListCon .projectItem button p {
+        font-size: calc(var(--px)* 4);
+    }
+    
+    .container #service .otherContactCon .otherContactItem i {
+        font-size: calc(var(--px)* 7);
+    }
+}

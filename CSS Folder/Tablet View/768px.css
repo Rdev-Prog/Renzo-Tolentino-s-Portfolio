@@ -1,0 +1,96 @@
+@media screen and (max-width: 768px) {
+    
+    
+    .container header {
+        width: 750px;
+        left: 9px;
+        top: 10px;
+    }
+
+    .container #home {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img"
+        "txt"
+        ;
+        padding-inline: 40px;
+    }
+
+    .container #home .infoCon {
+        grid-area: txt;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        gap: calc(var(--px)* 4);
+    }
+
+    .container #home .infoCon .buttonCon {
+        display: flex;
+        justify-content: center;
+        gap: calc(var(--px)* 5);
+    }
+
+    .container #home .imageCon img {
+        width: 60%;
+    }
+
+    .headerCon img {
+        width: 50%;
+    }
+
+    .container header .navBarCon a {
+        font-size: calc(var(--px)* 4);
+    }
+
+    .container header .navBarCon button {
+        padding: calc(var(--px)* 3) calc(var(--px)* 6);
+        font-size: calc(var(--px)* 4);
+    }
+
+    .container header .navBarCon {
+        gap: calc(var(--px)* 3);
+    }
+
+    .container #service .serviceListCon .serviceListBox .serviceTitle h1 {
+        font-size: calc(calc(var(--px)* 7));
+    }
+
+    .container #service .serviceListCon .serviceListBox .serviceTitle i {
+        font-size: calc(calc(var(--px)* 6));
+        width: 50px;
+    }
+
+    .container #service .serviceListCon .serviceListBox p {
+        font-size: calc(var(--px)* 4);
+        line-height: 20px;
+    }
+
+    .container #service .skillSetCon .skillBox i {
+        font-size: calc(var(--px)* 12);
+    }
+
+    .container #service {
+        display: grid;
+        grid-template-rows: 10% 20% 40% 20%;
+        row-gap: calc(var(--px)* 5);
+    }
+
+    .container #service .otherContactCon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container #project .projectListCon {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: calc(var(--px)* 5);
+        overflow-y: scroll;
+    }
+
+    .container #project .projectListCon .projectItem {
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60% repeat(3, 1fr);
+    }
+}

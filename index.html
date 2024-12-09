@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="IMAGES/My image.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Renzo Tolentino's Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <!-- LOGO CONTAINER -->
+            <div class="logoCon logoAnimation">
+                <p id="logo">R.Dev</p>
+            </div>
+
+            <!-- NAVIGATION BAR -->
+            <div class="navBarCon navBarConAnimation" id="navBarCon">
+                <a class="navLink" href="#home">Home</a>
+                <a class="navLink" href="#service">Services</a>
+                <a class="navLink" href="#project">Projects</a>
+                <button id="goToShopBtn">
+                    <p>Shop</p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+
+            <!-- HAMBURGER ICON -->
+            <div class="hamburgerIconCon" id="hamIconCon">
+                <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+            </div>
+        </header>
+
+        <!-- HOME SECTION (MAIN CONTENT)-->
+        <section id="home">
+            <!-- INFO CONTAINER (Short Description) -->
+            <div class="infoCon">
+                <div class="textCon">
+                    <div class="text1">Hello, I'm Renzo! a freelance</div>
+                    <div class="text2">Web Developer</div>
+                    <!-- <div class="text3">& App Developer</div> -->
+                </div>
+                <div class="buttonCon">
+                    <button id="startBtn">Start a project</button>
+                    <button id="workBtn">See my works</button>
+                </div>
+            </div>
+
+            <!-- IMAGE CONTAINER -->
+            <div class="imageCon">
+                <img src="IMAGES/My image.png" alt="">
+            </div>
+        </section>
+
+        <!-- SERVICE SECTION -->
+        <section id="service">
+            <!-- HEADER CONTAINER -->
+            <div class="headerCon">
+                <p>My Services</p>
+                <img src="IMAGES/lineImage.svg" alt="">
+            </div>
+
+            <!-- SERVICE LIST -->
+            <div class="serviceListCon">
+                <!-- SERVICE 1 -->
+                <div class="serviceListBox">
+                    <div class="serviceTitle">
+                        <i class="fa-solid fa-laptop"></i>
+                        <h1>Web Development</h1>
+                    </div>
+                    <p>I create responsive, static and dynamic website with good quality user-friendly interface so that your website will be easy to use by your user and create website that meets your expectation.</p>
+                </div>
+                
+                <!-- SERVICE 2 -->
+                <!-- <div class="serviceListBox">
+                    <div class="serviceTitle">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h1>App Development</h1>
+                    </div>
+                    <p>I create app for iOS, Android, or cross-platform, I am here to deliver a seamless and engaging mobile experience.</p>
+                </div> -->
+            </div>
+
+            <!-- SKILL SET -->
+            <div class="skillSetCon">
+                <div class="skillBox">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skillBox">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skillBox">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skillBox">
+                    <i class="fa-solid fa-database"></i>
+                    <p>MySQL</p>
+                </div>
+                <div class="skillBox">
+                    <i class="fa-brands fa-php"></i>
+                    <p>MySQL</p>
+                </div>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="otherContactCon">
+                <div class="otherContactItem">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/renzo.tolentino.56/">Renzo Tolentino</a>
+                </div>
+                <div class="otherContactItem">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/tolentino-renzo-4b526b30a/">Renzo Tolentino</a>
+                </div>
+                <div class="otherContactItem">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:09532152119">0953-215-2119</a>
+                </div>
+                <div class="otherContactItem">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:tolentinorenzo03@gmail.com">tolentinorenzo03@gmail.com</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- PROJECT SECTION -->
+        <section id="project">
+            <!-- HEADER CONTAINER -->
+            <div class="headerCon">
+                <p>See my Works!</p>
+                <img src="IMAGES/lineImage.svg" alt="">
+            </div>
+
+            <!-- PROJECT LIST -->
+            <div class="projectListCon">
+                <!-- PROJECT 1 -->
+                <div class="projectItem">
+                    <img src="" alt="projectImage">
+                    <p class="projTitle">Project Title</p>
+                    <div class="techCon">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JS</p>
+                        <p>PHP</p>
+                        <p>MySQL</p>
+                    </div>
+                    <button>
+                        <p class="projBtnText">Take a Look</p>
+                        <i class="projBtnIcon fa-solid fa-up-right-from-square"></i>   
+                    </button>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="projectItem">
+                    <img src="" alt="projectImage">
+                    <p class="projTitle">Project Title</p>
+                    <div class="techCon">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JS</p>
+                        <p>PHP</p>
+                        <p>MySQL</p>
+                    </div>
+                    <button>
+                        <p class="projBtnText">Take a Look</p>
+                        <i class="projBtnIcon fa-solid fa-up-right-from-square"></i>   
+                    </button>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="projectItem">
+                    <img src="" alt="projectImage">
+                    <p class="projTitle">Project Title</p>
+                    <div class="techCon">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JS</p>
+                        <p>PHP</p>
+                        <p>MySQL</p>
+                    </div>
+                    <button>
+                        <p class="projBtnText">Take a Look</p>
+                        <i class="projBtnIcon fa-solid fa-up-right-from-square"></i>   
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@media screen and (max-width: 320px) {
+    .container #header {
+        padding-inline: 10px;
+        width: 296px;
+    }
+
+    .container #home, .container #service, .container #project {
+        padding-inline: 10px;
+    }
+}

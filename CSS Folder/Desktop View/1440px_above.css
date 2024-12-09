@@ -1,0 +1,425 @@
+:root {
+    --px: 4px;
+}
+
+* {
+    color: #202020;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+}
+
+.container {
+    max-width: 1440px;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 100dvh);
+}   
+
+/* NAVIGATION BAR */
+.container header {
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    height: 10dvh;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition-duration: 0.5s;
+}
+
+/* LOGO CONTAINER */
+.container header .logoCon p {
+    font-size: calc(var(--px) * 8);
+    font-weight: bold;  
+    cursor: pointer;
+}
+
+/* NAVIGATION BAR CONTAINER */
+.container header .navBarCon {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--px) * 5);
+    width: fit-content;
+}
+
+/* NAVIGATION BAR - LINKS */
+.container header .navBarCon a {
+    position: relative;
+    font-size: calc(var(--px) * 5);
+    text-decoration: none;
+    padding: calc(var(--px) * 3) calc(var(--px) * 4);
+    font-weight: 500;
+}
+.container header .navBarCon a::after {
+    position: absolute;
+    content: ' ';
+    background-color: #202020;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.3s;
+}
+.container header .navBarCon a:hover::after {
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+/* NAVIGATION BAR - BUTTON */
+.container header .navBarCon button {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--px) * 5);
+    padding: calc(var(--px) * 4) calc(var(--px) * 8);
+    font-size: calc(var(--px) * 4.5);
+    border: none;
+    border-radius: calc(var(--px) * 2);
+    background-color: #202020;
+    cursor: pointer;
+    transition-duration: 0.1s;  
+    overflow: hidden;
+}
+
+/* NAVIGATION BAR - BUTTON (ANIMATION) */
+.container header .navBarCon button:active {
+    transform: scale(0.90);
+    transition-duration: 0.1s;
+}
+.container header .navBarCon button p,
+.container header .navBarCon button i {
+    transition-duration: 0.3s;
+}
+.container header .navBarCon button:hover p {
+    transform: translateY(-4px) rotate(-10deg);
+    transition-duration: 0.3s;
+}
+.container header .navBarCon button:hover i {
+    transform: translateX(20px);
+    transition-duration: 0.3s;
+}
+.container header .navBarCon button p {
+    color: #f2f2f2;
+}
+.container header .navBarCon button i {
+    color: #f2f2f2;
+}
+
+/* HAMBURGER ICON */
+.container .header .hamburgerIconCon {
+    display: none;
+    transition-duration: 0.1s;
+}
+.container .header .hamburgerIconCon:active {
+    transform: scale(0.90);
+    transition-duration: 0.1s;
+}
+
+.navBarConAppear {
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    background-color: #f2f2f2;
+    width: 401px;
+    left: 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 0 #20202049;
+}
+
+/* HOME SECTION - MAIN CONTENT (TEXT AND IMAGE) */
+.container #home {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--px);
+    overflow-y: hidden;
+}
+
+/* HOME SECTION - MAIN CONTENT - TEXT */
+.container #home .infoCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(var(--px) * 4);
+}
+.container #home .infoCon .textCon {
+    width: 100%;
+}
+.container #home .infoCon .textCon .text1 {
+    font-size: calc(var(--px) * 7);
+}
+.container #home .infoCon .textCon .text2 {
+    font-size: calc(var(--px) * 22);
+    font-weight: 600;
+}
+.container #home .infoCon .textCon .text3 {
+    font-size: calc(var(--px) * 22);
+    font-weight: 600;
+    -webkit-text-fill-color: #f2f2f2;
+    -webkit-text-stroke-color: #202020;
+    -webkit-text-stroke-width: 2px;
+}
+
+/* MAIN CONTENT - BUTTON CONTAINER */
+.container #home .infoCon .buttonCon {
+    display: flex;
+    gap: calc(var(--px) * 5);
+}
+.container #home .infoCon .buttonCon button {
+    padding: calc(var(--px) * 4) calc(var(--px) * 12);
+    font-size: calc(var(--px) * 5);
+    font-weight: 500;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.container #home .infoCon .buttonCon button:active {
+    transform: scale(0.90);
+    transition-duration: 0.1s;
+}
+
+/* MAIN CONTENT - 1ST BUTTON */
+.container #home .infoCon .buttonCon button:nth-child(1) {
+    background-color: #202020;
+    border: 2px solid #202020;
+    border-radius: calc(var(--px) * 2);
+    color: #f2f2f2;
+    position: relative;
+    transition-duration: 0.3s;
+}
+.container #home .infoCon .buttonCon button:nth-child(1):hover {
+    background-color: transparent;
+    transition-duration: 0.3s;
+    color: #202020;
+}
+/* MAIN CONTENT - 2ND BUTTON */
+.container #home .infoCon .buttonCon button:nth-child(2) {
+    background-color: transparent;
+    border: 2px solid #202020;
+    border-radius: calc(var(--px) * 2);
+    position: relative;
+    color: #202020;
+    z-index: 2;
+}
+.container #home .infoCon .buttonCon button:nth-child(2)::after {
+    position: absolute;
+    content: ' ';
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #202020;
+    z-index: -1;
+    transition-duration: 0.5s;
+
+}
+.container #home .infoCon .buttonCon button:nth-child(2):hover {
+    color: #f2f2f2;
+}
+.container #home .infoCon .buttonCon button:nth-child(2):hover::after {
+    width: 100%;
+    color: #f2f2f2;
+    transition-duration: 0.3s;
+}
+
+/* MAIN CONTAINER - IMAGE CONTAINER */
+.container #home .imageCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container #home .imageCon img {
+    width: 90%;
+}
+
+/* SERVICE PAGE */
+.container #service {
+    display: grid;
+    grid-template-rows: 10% 20% 50% 20%;
+    row-gap: calc(var(--px) * 5);
+}
+
+/* HEADER CONTAINER - SERVICE, PROJECT */
+.container #service .headerCon,
+.container #project .headerCon,
+.container #contact .headerCon {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--px) * 10);
+}
+.container #service .headerCon p,
+.container #project .headerCon p,
+.container #contact .headerCon p {
+    font-size: calc(var(--px) * 12);
+    font-weight: 700;
+}
+
+/* SERVICE PAGE - SERVICE BOX */
+.container #service .serviceListCon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: calc(var(--px) * 5);
+}
+.container #service .serviceListCon .serviceListBox {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--px) * 3);
+}
+.container #service .serviceListCon .serviceListBox  .serviceTitle {
+    display: flex;
+    gap: calc(var(--px) * 5);
+    align-items: center;
+}
+.container #service .serviceListCon .serviceListBox  .serviceTitle i {
+    font-size: calc(calc(var(--px) * 9));
+    aspect-ratio: 1;
+    width: 90px;
+    background-color: #202020;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2f2;
+}
+.container #service .serviceListCon .serviceListBox  .serviceTitle h1 {
+    font-size: calc(calc(var(--px) * 8));
+}
+.container #service .serviceListCon .serviceListBox p {
+    font-size: calc(var(--px) * 5);
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* SKILL SET CONTAINER */
+.container #service .skillSetCon {
+    display: grid;
+    gap: calc(var(--px) * 5);
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+.container #service .skillSetCon .skillBox {
+    aspect-ratio: 1;
+    width: 100%;
+    background-color: #f2f2f2;
+    border: 2px solid #202020;
+    padding: calc(var(--px) * 5);
+    border-radius: calc(var(--px) * 2);
+    box-shadow: 4px 4px 0 0 #20202049;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--px) * 5);
+}
+.container #service .skillSetCon .skillBox i {
+    font-size: calc(var(--px) * 20);
+}
+.container #service .skillSetCon .skillBox p {
+    font-size: calc(var(--px) * 5);
+}
+
+/* CONTACT CONTAINER */
+.container #service .otherContactCon {
+    display: flex;
+    justify-content: space-between;
+}
+.container #service .otherContactCon .otherContactItem {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    gap: calc(var(--px) * 3);
+}
+.container #service .otherContactCon .otherContactItem i {
+    font-size: calc(var(--px) * 12);
+}
+.container #service .otherContactCon .otherContactItem a {
+    text-decoration: none;
+    font-size: calc(var(--px) * 6);
+    font-weight: 500;
+}
+
+/* PROJECT CONTAINER */
+.container #project {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+    gap: calc(var(--px) * 5);
+}
+
+.container #project .projectListCon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--px) * 5);
+    overflow-y: scroll;
+}
+.container #project .projectListCon .projectItem {
+    border: 2px solid;
+    padding: calc(var(--px) * 3);
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% repeat(3, 1fr);
+    border-radius: calc(var(--px) * 2);
+    gap: calc(var(--px) * 2);
+    background-color: #f2f2f2;
+}
+
+/* PROJECT IMAGE */
+.container #project .projectListCon .projectItem img {
+    border-radius: var(--px);
+    background-color: #f2f2f2;
+}
+
+/* PROJECT TITLE */
+.container #project .projectListCon .projectItem .projTitle {
+    font-size: calc(var(--px) * 7);
+    font-weight: bold;
+}
+
+/* PROJECT TECH STACK CONTAINER */
+.container #project .projectListCon .projectItem .techCon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--px) * 3);
+}
+.container #project .projectListCon .projectItem .techCon p {
+    font-size: large;
+}
+
+/* PROJECT VIEW BUTTON */
+.container #project .projectListCon .projectItem button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--px) * 3);
+    background-color: #202020;
+    border-radius: calc(var(--px) * 2);
+    border: 2px solid #202020;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+.container #project .projectListCon .projectItem button:hover {
+    background-color: #f2f2f2;
+    transition-duration: 0.3s;
+}
+.container #project .projectListCon .projectItem button:hover .projBtnText,
+.container #project .projectListCon .projectItem button:hover .projBtnIcon {
+    color: #202020;
+}
+.container #project .projectListCon .projectItem button:active {
+    transform: scale(0.95);
+    transition-duration: 0.1s;
+}
+.container #project .projectListCon .projectItem button p {
+    font-size: calc(var(--px) * 5);
+    font-weight: 500;
+    color: #f2f2f2;
+}
+.container #project .projectListCon .projectItem button i {
+    font-size: larger;
+    color: #f2f2f2;
+}

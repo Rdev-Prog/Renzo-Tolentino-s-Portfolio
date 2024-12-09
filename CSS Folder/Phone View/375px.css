@@ -1,0 +1,11 @@
+@media screen and (max-width: 375px) {
+    .container #header {
+        padding-inline: 20px;
+        width: 351px;
+    }
+
+    .container #home .infoCon .textCon .text2 {
+        font-size: calc(var(--px)* 12);
+        line-height: 50px;
+    }
+}
