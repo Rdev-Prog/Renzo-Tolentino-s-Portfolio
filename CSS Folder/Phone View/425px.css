@@ -70,12 +70,17 @@
         width: 100%;
     }
 
+    .container #service .serviceListCon .serviceListBox p {
+        font-size: calc(var(--px)* 3.5);
+    }
+
     .container #service .skillSetCon .skillBox {
-        width: 120px;
+        width: 50px;
+        padding: calc(var(--px) * 2);
     }    
 
     .container #service .skillSetCon .skillBox i {
-        font-size: calc(var(--px)* 10);
+        font-size: calc(var(--px)* 8);
     }
     
     .container #service .skillSetCon {
